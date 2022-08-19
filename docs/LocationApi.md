@@ -1,4 +1,4 @@
-# openapi_client.LocationApi
+# lodgea-python.LocationApi
 
 All URIs are relative to *https://api.eu.lodgea.io*
 
@@ -20,14 +20,14 @@ Get a location by search text in free from. This parameter is required.
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import location_api
-from openapi_client.model.location_search import LocationSearch
-from openapi_client.model.v1_location_search_post200_response import V1LocationSearchPost200Response
+import lodgea-python
+from lodgea-python.api import location_api
+from lodgea-python.model.location_search import LocationSearch
+from lodgea-python.model.v1_location_search_post200_response import V1LocationSearchPost200Response
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.eu.lodgea.io
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = lodgea-python.Configuration(
     host = "https://api.eu.lodgea.io"
 )
 
@@ -43,7 +43,7 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with lodgea-python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = location_api.LocationApi(api_client)
     location_search = LocationSearch(
@@ -55,7 +55,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Search for Location
         api_response = api_instance.v1_location_search_post(location_search)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except lodgea-python.ApiException as e:
         print("Exception when calling LocationApi->v1_location_search_post: %s\n" % e)
 ```
 

@@ -1,4 +1,4 @@
-# openapi_client.AvailabilityApi
+# lodgea-python.AvailabilityApi
 
 All URIs are relative to *https://api.eu.lodgea.io*
 
@@ -20,14 +20,14 @@ Get availability information based on search criteria. The possible values for t
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import availability_api
-from openapi_client.model.availability_search import AvailabilitySearch
-from openapi_client.model.v1_availability_search_post200_response import V1AvailabilitySearchPost200Response
+import lodgea-python
+from lodgea-python.api import availability_api
+from lodgea-python.model.v1_availability_search_post200_response import V1AvailabilitySearchPost200Response
+from lodgea-python.model.availability_search import AvailabilitySearch
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.eu.lodgea.io
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = lodgea-python.Configuration(
     host = "https://api.eu.lodgea.io"
 )
 
@@ -43,7 +43,7 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with lodgea-python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = availability_api.AvailabilityApi(api_client)
     availability_search = AvailabilitySearch(
@@ -83,7 +83,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Search for Availability
         api_response = api_instance.v1_availability_search_post(availability_search=availability_search)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except lodgea-python.ApiException as e:
         print("Exception when calling AvailabilityApi->v1_availability_search_post: %s\n" % e)
 ```
 

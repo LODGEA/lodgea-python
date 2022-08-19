@@ -1,4 +1,4 @@
-# openapi-client
+# lodgea-python
 # Introduction
 
 Whether you own your property or not, LODGEA provides the platform to provide accommodation services to your consumers through a variety of connectivity options and business models. LODGEA provides a flexible and open platform for many use cases.
@@ -1425,7 +1425,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import openapi_client
+import lodgea-python
 ```
 
 ### Setuptools
@@ -1439,7 +1439,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import lodgea-python
 ```
 
 ## Getting Started
@@ -1449,14 +1449,14 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
-import openapi_client
+import lodgea-python
 from pprint import pprint
-from openapi_client.api import availability_api
-from openapi_client.model.availability_search import AvailabilitySearch
-from openapi_client.model.v1_availability_search_post200_response import V1AvailabilitySearchPost200Response
+from lodgea-python.api import availability_api
+from lodgea-python.model.availability_search import AvailabilitySearch
+from lodgea-python.model.v1_availability_search_post200_response import V1AvailabilitySearchPost200Response
 # Defining the host is optional and defaults to https://api.eu.lodgea.io
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = lodgea-python.Configuration(
     host = "https://api.eu.lodgea.io"
 )
 
@@ -1473,7 +1473,7 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with lodgea-python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = availability_api.AvailabilityApi(api_client)
     availability_search = AvailabilitySearch(
@@ -1511,7 +1511,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Search for Availability
         api_response = api_instance.v1_availability_search_post(availability_search=availability_search)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except lodgea-python.ApiException as e:
         print("Exception when calling AvailabilityApi->v1_availability_search_post: %s\n" % e)
 ```
 
@@ -1602,21 +1602,21 @@ info@lodgea.com
 
 
 ## Notes for Large OpenAPI documents
-If the OpenAPI document is large, imports in openapi_client.apis and openapi_client.models may fail with a
+If the OpenAPI document is large, imports in lodgea-python.apis and lodgea-python.models may fail with a
 RecursionError indicating the maximum recursion limit has been exceeded. In that case, there are a couple of solutions:
 
 Solution 1:
 Use specific imports for apis and models like:
-- `from openapi_client.api.default_api import DefaultApi`
-- `from openapi_client.model.pet import Pet`
+- `from lodgea-python.api.default_api import DefaultApi`
+- `from lodgea-python.model.pet import Pet`
 
 Solution 2:
 Before importing the package, adjust the maximum recursion limit as shown below:
 ```
 import sys
 sys.setrecursionlimit(1500)
-import openapi_client
-from openapi_client.apis import *
-from openapi_client.models import *
+import lodgea-python
+from lodgea-python.apis import *
+from lodgea-python.models import *
 ```
 

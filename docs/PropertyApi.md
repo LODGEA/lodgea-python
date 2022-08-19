@@ -1,4 +1,4 @@
-# openapi_client.PropertyApi
+# lodgea-python.PropertyApi
 
 All URIs are relative to *https://api.eu.lodgea.io*
 
@@ -20,14 +20,14 @@ Get all information about a specific property by its ID. This parameter is requi
 
 ```python
 import time
-import openapi_client
-from openapi_client.api import property_api
-from openapi_client.model.v1_property_get_post200_response import V1PropertyGetPost200Response
-from openapi_client.model.property_get import PropertyGet
+import lodgea-python
+from lodgea-python.api import property_api
+from lodgea-python.model.property_get import PropertyGet
+from lodgea-python.model.v1_property_get_post200_response import V1PropertyGetPost200Response
 from pprint import pprint
 # Defining the host is optional and defaults to https://api.eu.lodgea.io
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = lodgea-python.Configuration(
     host = "https://api.eu.lodgea.io"
 )
 
@@ -43,7 +43,7 @@ configuration.api_key['ApiKeyAuth'] = 'YOUR_API_KEY'
 # configuration.api_key_prefix['ApiKeyAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with lodgea-python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = property_api.PropertyApi(api_client)
     property_get = PropertyGet(
@@ -55,7 +55,7 @@ with openapi_client.ApiClient(configuration) as api_client:
         # Get Property by ID
         api_response = api_instance.v1_property_get_post(property_get)
         pprint(api_response)
-    except openapi_client.ApiException as e:
+    except lodgea-python.ApiException as e:
         print("Exception when calling PropertyApi->v1_property_get_post: %s\n" % e)
 ```
 
