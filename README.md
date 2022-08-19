@@ -3,7 +3,7 @@
 
 Whether you own your property or not, LODGEA provides the platform to provide accommodation services to your consumers through a variety of connectivity options and business models. LODGEA provides a flexible and open platform for many use cases.
 
-This API allows you to search for availabilities or locations and get all available information about a specific property.
+This API allows you to search for availabilities or locations and get all available information about a specific property. For more information, check out the [official API docs](https://lodgea.redoc.ly/).
 
 # API Endpoint
 
@@ -185,9 +185,7 @@ curl --location --request POST 'https://api.eu.lodgea.io/v1/availability/search'
 
 # Appendix
 
-## Parameters
-
-### currencyCode
+## currencyCode
 
 | Code | Name |
 | ---- | ---- |
@@ -242,7 +240,7 @@ curl --location --request POST 'https://api.eu.lodgea.io/v1/availability/search'
 | 49   | KRW  |
 | 50   | RON  |
 
-### locationType
+## locationType
 
 | Type                        | Name                        | Example                             |
 | --------------------------- | --------------------------- | ----------------------------------- |
@@ -263,7 +261,7 @@ curl --location --request POST 'https://api.eu.lodgea.io/v1/availability/search'
 | streetNumber                | Street Number               | 20                                  |
 | route                       | Route                       | Nordhedig                           |
 
-### serviceCode
+## serviceCode
 
 | Code  | Name                                                    |
 | ----- | ------------------------------------------------------- |
@@ -796,7 +794,7 @@ curl --location --request POST 'https://api.eu.lodgea.io/v1/availability/search'
 | 6001  | Dinner                                                  |
 | 90001 | Renewable energy                                        |
 
-### mealPlanCode
+## mealPlanCode
 
 | Code  | Name                          |
 | ----- | ----------------------------- |
@@ -826,7 +824,7 @@ curl --location --request POST 'https://api.eu.lodgea.io/v1/availability/search'
 | 24    | Lunch & Dinner                |
 | 90001 | 3/4 Plan                      |
 
-### typeCode
+## typeCode
 
 | Code | Name                          |
 | ---- | ----------------------------- |
@@ -903,7 +901,7 @@ curl --location --request POST 'https://api.eu.lodgea.io/v1/availability/search'
 | 5008 | Capsule Hotel                 |
 | 5009 | Holiday Park                  |
 
-### unitTypeCode
+## unitTypeCode
 
 | Code | Name             |
 | ---- | ---------------- |
@@ -926,7 +924,7 @@ curl --location --request POST 'https://api.eu.lodgea.io/v1/availability/search'
 | 32   | Mobile home      |
 | 33   | Tent             |
 
-### unitAmenityCode
+## unitAmenityCode
 
 | Code  | Name                                                         |
 | ----- | ------------------------------------------------------------ |
