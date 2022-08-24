@@ -57,8 +57,8 @@ with lodgea-python.ApiClient(configuration) as api_client:
         max_length_of_stay=27,
         location_name="Oberbayern",
         location_type="locality",
-        earliest_arrival=dateutil_parser('1970-01-01').date(),
-        latest_return=dateutil_parser('1970-01-01').date(),
+        earliest_arrival=dateutil_parser('Thu Sep 01 00:00:00 UTC 2022').date(),
+        latest_return=dateutil_parser('Thu Sep 08 00:00:00 UTC 2022').date(),
         sort="quality",
         service_list=[
             242,
