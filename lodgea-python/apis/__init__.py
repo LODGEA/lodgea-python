@@ -14,6 +14,6 @@
 #   sys.setrecursionlimit(n)
 
 # Import APIs into API package:
-from lodgea-python.api.availability_api import AvailabilityApi
-from lodgea-python.api.location_api import LocationApi
-from lodgea-python.api.property_api import PropertyApi
+from com.lodgea.controllers.availability_api import AvailabilityApi
+from com.lodgea.controllers.location_api import LocationApi
+from com.lodgea.controllers.property_api import PropertyApi

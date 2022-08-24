@@ -63,12 +63,12 @@ docs/V1PropertyGetPost200ResponsePropertyTransaction.md
 docs/V1PropertyGetPost200ResponsePropertyTransactionExternalListInner.md
 git_push.sh
 lodgea-python/__init__.py
-lodgea-python/api/__init__.py
-lodgea-python/api/availability_api.py
-lodgea-python/api/location_api.py
-lodgea-python/api/property_api.py
 lodgea-python/api_client.py
 lodgea-python/apis/__init__.py
+lodgea-python/com/lodgea/controllers/__init__.py
+lodgea-python/com/lodgea/controllers/availability_api.py
+lodgea-python/com/lodgea/controllers/location_api.py
+lodgea-python/com/lodgea/controllers/property_api.py
 lodgea-python/configuration.py
 lodgea-python/exceptions.py
 lodgea-python/model/__init__.py

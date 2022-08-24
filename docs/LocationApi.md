@@ -21,7 +21,7 @@ Get a location by search text in free from. This parameter is required.
 ```python
 import time
 import lodgea-python
-from lodgea-python.api import location_api
+from com.lodgea.controllers import location_api
 from lodgea-python.model.location_search import LocationSearch
 from lodgea-python.model.v1_location_search_post200_response import V1LocationSearchPost200Response
 from pprint import pprint

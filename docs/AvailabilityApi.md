@@ -21,7 +21,7 @@ Get availability information based on search criteria. The possible values for t
 ```python
 import time
 import lodgea-python
-from lodgea-python.api import availability_api
+from com.lodgea.controllers import availability_api
 from lodgea-python.model.v1_availability_search_post200_response import V1AvailabilitySearchPost200Response
 from lodgea-python.model.availability_search import AvailabilitySearch
 from pprint import pprint

@@ -21,7 +21,7 @@ Get all information about a specific property by its ID. This parameter is requi
 ```python
 import time
 import lodgea-python
-from lodgea-python.api import property_api
+from com.lodgea.controllers import property_api
 from lodgea-python.model.property_get import PropertyGet
 from lodgea-python.model.v1_property_get_post200_response import V1PropertyGetPost200Response
 from pprint import pprint

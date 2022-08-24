@@ -49,7 +49,7 @@ Please follow the [installation procedure](#installation--usage) and then run th
 import time
 import lodgea-python
 from pprint import pprint
-from lodgea-python.api import availability_api
+from com.lodgea.controllers import availability_api
 from lodgea-python.model.availability_search import AvailabilitySearch
 from lodgea-python.model.v1_availability_search_post200_response import V1AvailabilitySearchPost200Response
 # Defining the host is optional and defaults to https://api.eu.lodgea.io
