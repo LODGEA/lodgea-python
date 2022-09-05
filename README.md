@@ -196,7 +196,7 @@ Class | Method | HTTP request | Description
 
 ## Author
 
-info@lodgea.com
+support@lodgea.com
 
 
 ## Notes for Large OpenAPI documents
