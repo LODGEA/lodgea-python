@@ -48,6 +48,8 @@ with lodgea-python.ApiClient(configuration) as api_client:
     api_instance = location_api.LocationApi(api_client)
     location_search = LocationSearch(
         search_text="Hotel Stadt Hamburg",
+        currency_code="EUR",
+        language_code="en",
     ) # LocationSearch | Free-text search criteria
 
     # example passing only required values which don't have defaults set
