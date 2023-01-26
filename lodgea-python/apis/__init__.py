@@ -6,7 +6,7 @@
 # raise a `RecursionError`.
 # In order to avoid this, import only the API that you directly need like:
 #
-#   from lodgea-python.api.availability_api import AvailabilityApi
+#   from lodgea-python.api.default_api import DefaultApi
 #
 # or import this package, but before doing it, use:
 #
@@ -14,6 +14,4 @@
 #   sys.setrecursionlimit(n)
 
 # Import APIs into API package:
-from com.lodgea.controllers.availability_api import AvailabilityApi
-from com.lodgea.controllers.location_api import LocationApi
-from com.lodgea.controllers.property_api import PropertyApi
+from com.lodgea.controllers.default_api import DefaultApi
